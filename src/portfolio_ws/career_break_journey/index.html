@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Developer & Hockey Enthusiast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">MyPortfolio</a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#career-transition">Career Transition</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm a <span class="highlight">Developer</span> with a passion for Hockey & Biking</h1>
+                <p>Former Finance Professional • Python & Django Enthusiast • Hockey Player • Road Cycling Advocate</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#career-transition" class="btn btn-secondary">My Career Journey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="filter-buttons">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="hockey">Hockey</button>
+                <button class="filter-button" data-filter="science">Science</button>
+                <button class="filter-button" data-filter="biking">Biking</button>
+                <button class="filter-button" data-filter="django">Django</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Hockey Project -->
+                <div class="portfolio-item" data-category="hockey django">
+                    <div class="portfolio-img">
+                        <img src="https://placehold.co/600x400?text=Hockey+Stats+Tracker" alt="Hockey Stats Tracker">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Hockey Stats Tracker</h3>
+                        <p>A Django application for tracking hockey statistics with visualizations.</p>
+                        <div class="portfolio-tech">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>D3.js</span>
+                        </div>
+                        <a href="#" class="btn-view">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Science Project -->
+                <div class="portfolio-item" data-category="science django">
+                    <div class="portfolio-img">
+                        <img src="https://placehold.co/600x400?text=Science+Blog" alt="Science Blog">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Science Insights Blog</h3>
+                        <p>A Django-powered blog focusing on interesting scientific discoveries.</p>
+                        <div class="portfolio-tech">
+                            <span>Django</span>
+                            <span>Heroku</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="btn-view">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Biking Project -->
+                <div class="portfolio-item" data-category="biking django">
+                    <div class="portfolio-img">
+                        <img src="https://placehold.co/600x400?text=Cycling+Routes" alt="Cycling Routes App">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Road Biking Route Tracker</h3>
+                        <p>Map-based Django application for tracking and sharing cycling routes.</p>
+                        <div class="portfolio-tech">
+                            <span>Django</span>
+                            <span>Leaflet.js</span>
+                            <span>GeoDjango</span>
+                        </div>
+                        <a href="#" class="btn-view">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Career Transition Project -->
+                <div class="portfolio-item" data-category="django">
+                    <div class="portfolio-img">
+                        <img src="https://placehold.co/600x400?text=Finance+to+Code" alt="Finance to Code">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Finance to Code Journey</h3>
+                        <p>A platform for finance professionals transitioning to programming careers.</p>
+                        <div class="portfolio-tech">
+                            <span>Django</span>
+                            <span>Bootstrap</span>
+                            <span>Heroku</span>
+                        </div>
+                        <a href="#" class="btn-view">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="career-transition" class="career-transition">
+        <div class="container">
+            <h2 class="section-title">My Career Transition Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Finance Career</h3>
+                        <span class="date">2014 - 2020</span>
+                        <p>Working in the finance industry, handling financial analysis and reporting.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Learning to Code</h3>
+                        <span class="date">2020 - 2021</span>
+                        <p>Started learning Python and web development through online courses and personal projects.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>First Django Project</h3>
+                        <span class="date">2021</span>
+                        <p>Built my first Django application and deployed it to Heroku.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Career Switch</h3>
+                        <span class="date">2022 - Present</span>
+                        <p>Successfully transitioned to a role as a developer, using my finance background as an advantage.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="advice-section">
+                <h3>Advice for Finance Professionals</h3>
+                <div class="advice-cards">
+                    <div class="advice-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Leverage Your Background</h4>
+                        <p>Your financial knowledge is valuable in fintech and business applications.</p>
+                    </div>
+                    
+                    <div class="advice-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Build Real Projects</h4>
+                        <p>Don't just learn theory. Build projects you're passionate about, like I did with hockey stats.</p>
+                    </div>
+                    
+                    <div class="advice-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Find a Community</h4>
+                        <p>Connect with other career changers to share experiences and resources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out about projects, career advice, or just to talk about hockey and cycling!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>email@example.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/yourprofile</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/yourusername</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="newsletter-form">
+                        <h3>Subscribe to my Newsletter</h3>
+                        <p>Get updates on my latest projects and career transition tips.</p>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <div id="success-message" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">MyPortfolio</a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
