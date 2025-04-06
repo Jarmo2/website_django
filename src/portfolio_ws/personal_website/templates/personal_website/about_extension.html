@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}About Me - Developer & Hockey Enthusiast{% endblock %}
+
+{% block content %}
+<section class="about-hero">
+    <div class="container">
+        <div class="about-hero-content">
+            <h1>About Me</h1>
+            <p>Developer, Hockey Player, Science Enthusiast, and Road Cycling Advocate</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="https://placehold.co/600x800?text=Profile+Photo" alt="My Profile Photo">
+            </div>
+            <div class="about-text">
+                <h2>My Story</h2>
+                <p>Hello! I'm a developer with a unique background in finance who made the transition to programming. My career journey has taught me that it's never too late to pursue what truly interests you.</p>
+
+                <p>After several years in the financial sector, I discovered my passion for coding and decided to make the switch. I've been focused on Python and Django development, creating applications that combine my analytical skills from finance with my technical programming abilities.</p>
+
+                <h3>My Interests</h3>
+
+                <div class="interest-item">
+                    <i class="fas fa-hockey-puck"></i>
+                    <div>
+                        <h4>Field & Ice Hockey</h4>
+                        <p>I've been playing hockey for over 10 years. The teamwork and strategy aspects of the game have surprisingly translated well to my programming career.</p>
+                    </div>
+                </div>
+
+                <div class="interest-item">
+                    <i class="fas fa-bicycle"></i>
+                    <div>
+                        <h4>Road Biking</h4>
+                        <p>On weekends, you'll find me exploring new routes on my road bike. I've completed several century rides and am always looking for new challenges.</p>
+                    </div>
+                </div>
+
+                <div class="interest-item">
+                    <i class="fas fa-flask"></i>
+                    <div>
+                        <h4>Science</h4>
+                        <p>I'm passionate about scientific discoveries and how technology can help advance our understanding of the world. I regularly read science journals and attend lectures.</p>
+                    </div>
+                </div>
+
+                <h3>Career Transition</h3>
+                <p>Making the switch from finance to programming wasn't easy, but it's been incredibly rewarding. I'm passionate about helping others make similar transitions, which is why I've created resources and project examples specifically for finance professionals looking to enter the tech world.</p>
+
+                <div class="skill-section">
+                    <h3>Skills & Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Django</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Heroku</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Financial Analysis</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Interested in collaboration?</h2>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        <a href="{% url 'home' %}#contact" class="btn btn-primary">Contact Me</a>
+    </div>
+</section>
+{% endblock %}

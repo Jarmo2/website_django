@@ -56,7 +56,7 @@ ROOT_URLCONF = 'career_break_journey.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'personaL_website'/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
