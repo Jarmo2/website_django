@@ -13,7 +13,9 @@
         <nav class="navbar">
             <div class="container">
                 <div class="logo">
-                    <a href="{% url 'home' %}">MyPortfolio</a>
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'personal_website/images/logo.png' %}" alt="Logo" class="logo-img">
+                    </a>
                 </div>
                 <div class="nav-links">
                     <a href="{% url 'home' %}" {% if request.path == '/' %}class="active"{% endif %}>Home</a>
@@ -59,7 +61,7 @@
                 {% for project in projects %}
                 <div class="portfolio-item" data-category="{{ project.categories }}">
                     <div class="portfolio-img">
-                        <img src="{{ project.image_url }}" alt="{{ project.title }}">
+                        <img src="{% static  project.image_url %}" alt="{{ project.title }}">
                     </div>
                     <div class="portfolio-info">
                         <h3>{{ project.title }}</h3>

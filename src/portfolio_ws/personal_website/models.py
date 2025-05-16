@@ -11,7 +11,7 @@ class Project(models.Model):
 
     title = models.CharField(max_length=200)
     description = models.TextField()
-    image_url = models.URLField()
+    image_url = models.CharField(max_length=100)
     categories = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
     technologies = models.CharField(max_length=200)
     project_url = models.URLField()

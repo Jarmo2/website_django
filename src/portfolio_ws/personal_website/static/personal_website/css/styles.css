@@ -1,4 +1,3 @@
-
 /* Base CSS */
 :root {
     --primary-color: #2563eb;
@@ -103,12 +102,27 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 5px 0; /* Add some vertical padding */
 }
 
 .logo a {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--dark-color);
+    display: inline-flex;
+    align-items: center; /* Center the logo vertically */
+}
+
+.logo-img {
+    height: 40px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Set a maximum width to prevent the logo from taking too much space */
 }
 
 .nav-links {
@@ -700,12 +714,12 @@ footer {
     .about-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .about-image {
         max-width: 500px;
         margin: 0 auto;
     }
-    
+
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
@@ -715,11 +729,11 @@ footer {
     .hero-content h1 {
         font-size: 2.2rem;
     }
-    
+
     .mobile-menu-btn {
         display: block;
     }
-    
+
     .nav-links {
         position: fixed;
         top: 80px;
@@ -731,37 +745,37 @@ footer {
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         transition: var(--transition);
     }
-    
+
     .nav-links.active {
         left: 0;
     }
-    
+
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .timeline::after {
         left: 31px;
     }
-    
+
     .timeline-item {
         width: 100%;
         padding-left: 70px;
         padding-right: 0;
     }
-    
+
     .timeline-item:nth-child(even) {
         left: 0;
     }
-    
+
     .timeline-dot {
         left: 15px;
     }
-    
+
     .timeline-item:nth-child(even) .timeline-dot {
         left: 15px;
     }
-    
+
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -772,7 +786,7 @@ footer {
     .hero-btns {
         flex-direction: column;
     }
-    
+
     .hero-btns .btn {
         width: 100%;
     }
