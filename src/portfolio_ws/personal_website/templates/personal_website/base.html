@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,122 +33,7 @@
     </header>
 
     {% block content %}
-    <!-- Home Page Content -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hello, I'm a <span class="highlight">Developer</span> with a passion for Hockey & Biking</h1>
-                <p>Former Finance Professional • Python & Django Enthusiast • Hockey Player • Road Cycling Advocate</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#career-transition" class="btn btn-secondary">My Career Journey</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="filter-buttons">
-                <button class="filter-button active" data-filter="all">All</button>
-                <button class="filter-button" data-filter="hockey">Hockey</button>
-                <button class="filter-button" data-filter="science">Science</button>
-                <button class="filter-button" data-filter="biking">Biking</button>
-                <button class="filter-button" data-filter="django">Django</button>
-            </div>
-
-            <div class="portfolio-grid">
-                {% for project in projects %}
-                <div class="portfolio-item" data-category="{{ project.categories }}">
-                    <div class="portfolio-img">
-                        <img src="{% static  project.image_url %}" alt="{{ project.title }}">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
-                        <div class="portfolio-tech">
-                            {% for tech in project.technologies.split %}
-                            <span>{{ tech }}</span>
-                            {% endfor %}
-                        </div>
-                        <a href="{{ project.project_url }}" class="btn-view">View Project</a>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-
-    <section id="career-transition" class="career-transition">
-        <div class="container">
-            <h2 class="section-title">My Career Transition Journey</h2>
-            <div class="timeline">
-                {% for milestone in career_milestones %}
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>{{ milestone.title }}</h3>
-                        <span class="date">{{ milestone.date }}</span>
-                        <p>{{ milestone.description }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-
-            <div class="advice-section">
-                <h3>Advice for Finance Professionals</h3>
-                <div class="advice-cards">
-                    {% for advice in advice_list %}
-                    <div class="advice-card">
-                        <i class="{{ advice.icon_class }}"></i>
-                        <h4>{{ advice.title }}</h4>
-                        <p>{{ advice.description }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>Feel free to reach out about projects, career advice, or just to talk about hockey and cycling!</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <span>email@example.com</span>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <span>linkedin.com/in/yourprofile</span>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <span>github.com/yourusername</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form id="newsletter-form" method="post">
-                        {% csrf_token %}
-                        <h3>Subscribe to my Newsletter</h3>
-                        <p>Get updates on my latest projects and career transition tips.</p>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                        <div id="success-message" style="display: none;"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
     {% endblock %}
 
     <footer>
